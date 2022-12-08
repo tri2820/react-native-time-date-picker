@@ -76,10 +76,10 @@ const Header = ({ changeMonth, onToggleTime, onToggleMonth, }) => {
             }
         }}>
             <Text style={[style.headerText, style.monthText]}>
-              {utils.getMonthYearText(mainState.activeDate).split(" ")[0]}
+              {utils.getMonthYearText(mainState.activeDate).split(" ").slice(0, -1).join(' ')},
             </Text>
             <Text style={[style.headerText, style.monthText]}>
-              {utils.getMonthYearText(mainState.activeDate).split(" ")[1]}
+              {utils.getMonthYearText(mainState.activeDate).split(" ").at(-1)}
             </Text>
           </RNBounceable>
         </Animated.View>
@@ -90,10 +90,10 @@ const Header = ({ changeMonth, onToggleTime, onToggleMonth, }) => {
             { flexDirection: "row" },
         ]}>
           <Text style={style.headerText}>
-            {utils.getMonthYearText(lastDate).split(" ")[0]}
+            {utils.getMonthYearText(lastDate).split(" ").slice(0, -1).join(' ')},
           </Text>
           <Text style={style.headerText}>
-            {utils.getMonthYearText(lastDate).split(" ")[1]}
+            {utils.getMonthYearText(lastDate).split(" ").at(-1)}
           </Text>
           {mode === Modes.date && (<Text style={style.headerText}>
               {utils.getConvertedNumber(utils.getTime(mainState.activeDate))}
