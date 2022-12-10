@@ -130,7 +130,7 @@ const Header: React.FC<HeaderProps> = ({
               {utils.getMonthYearText(mainState.activeDate).split(" ").slice(0, -1).join(' ')}
             </Text>
             <Text style={[style.headerText, style.monthText]}>
-              {utils.getMonthYearText(mainState.activeDate).split(" ").at(-1)}
+              {utils.getMonthYearText(mainState.activeDate).split(" ").pop()}
             </Text>
           </RNBounceable>
         </Animated.View>
@@ -146,7 +146,7 @@ const Header: React.FC<HeaderProps> = ({
             {utils.getMonthYearText(lastDate).split(" ").slice(0, -1).join(' ')}
           </Text>
           <Text style={style.headerText}>
-            {utils.getMonthYearText(lastDate).split(" ").at(-1)}
+            {utils.getMonthYearText(lastDate).split(" ").pop()}
           </Text>
           {mode === Modes.date && (
             <Text style={style.headerText}>
