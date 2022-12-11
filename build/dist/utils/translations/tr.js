@@ -1,14 +1,14 @@
 export default {
     dayNames: [
+        "Pazar",
         "Pazartesi",
         "Salı",
         "Çarşamba",
         "Perşembe",
         "Cuma",
         "Cumartesi",
-        "Pazar",
     ],
-    dayNamesShort: ["Pzt", "Sal", "Çar", "Per", "Cum", "Cmt", "Paz"],
+    dayNamesShort: ["Paz", "Pzt", "Sal", "Çar", "Per", "Cum", "Cmt"],
     monthNames: [
         "Ocak",
         "Şubat",

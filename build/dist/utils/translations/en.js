@@ -1,14 +1,14 @@
 export default {
     dayNames: [
+        "Sunday",
         "Monday",
         "Tuesday",
         "Wednesday",
         "Thursday",
         "Friday",
         "Saturday",
-        "Sunday",
     ],
-    dayNamesShort: ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
+    dayNamesShort: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
     monthNames: [
         "January",
         "February",

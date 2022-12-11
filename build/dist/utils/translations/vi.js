@@ -1,14 +1,14 @@
 export default {
     dayNames: [
+        "Chủ nhật",
         "Thứ hai",
         "Thứ ba",
         "Thứ tư",
         "Thứ năm",
         "Thứ sáu",
         "Thứ bảy",
-        "Chủ nhật",
     ],
-    dayNamesShort: ["T2", "T3", "T4", "T5", "T6", "T7", "CN"],
+    dayNamesShort: ["CN", "T2", "T3", "T4", "T5", "T6", "T7"],
     monthNames: [
         "Tháng 01",
         "Tháng 02",
